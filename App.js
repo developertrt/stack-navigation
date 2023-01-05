@@ -14,8 +14,8 @@ const App = () => {
   return (
     <View style={{ flex: 1 }}>
       <NavigationContainer>
-        <Stack.Navigator screenOptions={{ 
-          headerShown:false
+        <Stack.Navigator screenOptions={{
+          headerShown: false
         }}>
           <Stack.Screen
             name='Home'
@@ -25,14 +25,13 @@ const App = () => {
             name='Detail'
             component={Detail}
           />
-           <Stack.Screen
+          <Stack.Screen
             name='Chat'
             component={Chat}
           />
-           <Stack.Screen
+          <Stack.Screen
             name='Notification'
             component={Notification}
-            options={{ title: 'Detail Screen' }}
           />
         </Stack.Navigator>
       </NavigationContainer>
